@@ -1,0 +1,1954 @@
+[
+   {
+      "name":"Afghanistan",
+      "code":"AF",
+      "buff":{
+         "description":"mist",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"land Islands",
+      "code":"AX",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Albania",
+      "code":"AL",
+      "buff":{
+         "description":"mist",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Algeria",
+      "code":"DZ",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"American Samoa",
+      "code":"AS",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"AndorrA",
+      "code":"AD",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Angola",
+      "code":"AO",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Anguilla",
+      "code":"AI",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Antarctica",
+      "code":"AQ",
+      "buff":{
+         "description":"snow",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Antigua and Barbuda",
+      "code":"AG",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Argentina",
+      "code":"AR",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Armenia",
+      "code":"AM",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Aruba",
+      "code":"AW",
+      "buff":{
+         "description":"rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Australia",
+      "code":"AU",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Austria",
+      "code":"AT",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Azerbaijan",
+      "code":"AZ",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Bahamas",
+      "code":"BS",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Bahrain",
+      "code":"BH",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Bangladesh",
+      "code":"BD",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Barbados",
+      "code":"BB",
+      "buff":{
+         "description":"snow",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Belarus",
+      "code":"BY",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Belgium",
+      "code":"BE",
+      "buff":{
+         "description":"mist",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Belize",
+      "code":"BZ",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Benin",
+      "code":"BJ",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Bermuda",
+      "code":"BM",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Bhutan",
+      "code":"BT",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Bolivia",
+      "code":"BO",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Bosnia and Herzegovina",
+      "code":"BA",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Botswana",
+      "code":"BW",
+      "buff":{
+         "description":"rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Bouvet Island",
+      "code":"BV",
+      "buff":{
+         "description":"rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Brazil",
+      "code":"BR",
+      "buff":{
+         "description":"mist",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"British Indian Ocean Territory",
+      "code":"IO",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Brunei Darussalam",
+      "code":"BN",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Bulgaria",
+      "code":"BG",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Burkina Faso",
+      "code":"BF",
+      "buff":{
+         "description":"rain",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Burundi",
+      "code":"BI",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Cambodia",
+      "code":"KH",
+      "buff":{
+         "description":"mist",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Cameroon",
+      "code":"CM",
+      "buff":{
+         "description":"mist",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Canada",
+      "code":"CA",
+      "buff":{
+         "description":"mist",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Cape Verde",
+      "code":"CV",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Cayman Islands",
+      "code":"KY",
+      "buff":{
+         "description":"mist",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Central African Republic",
+      "code":"CF",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Chad",
+      "code":"TD",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Chile",
+      "code":"CL",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"China",
+      "code":"CN",
+      "buff":{
+         "description":"rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Christmas Island",
+      "code":"CX",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Cocos (Keeling) Islands",
+      "code":"CC",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Colombia",
+      "code":"CO",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Comoros",
+      "code":"KM",
+      "buff":{
+         "description":"snow",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Congo",
+      "code":"CG",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Congo, The Democratic Republic of the",
+      "code":"CD",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Cook Islands",
+      "code":"CK",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Costa Rica",
+      "code":"CR",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Cote D\"Ivoire",
+      "code":"CI",
+      "buff":{
+         "description":"mist",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Croatia",
+      "code":"HR",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Cuba",
+      "code":"CU",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Cyprus",
+      "code":"CY",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Czech Republic",
+      "code":"CZ",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Denmark",
+      "code":"DK",
+      "buff":{
+         "description":"snow",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Djibouti",
+      "code":"DJ",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Dominica",
+      "code":"DM",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Dominican Republic",
+      "code":"DO",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Ecuador",
+      "code":"EC",
+      "buff":{
+         "description":"mist",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Egypt",
+      "code":"EG",
+      "buff":{
+         "description":"mist",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"El Salvador",
+      "code":"SV",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Equatorial Guinea",
+      "code":"GQ",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Eritrea",
+      "code":"ER",
+      "buff":{
+         "description":"rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Estonia",
+      "code":"EE",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Ethiopia",
+      "code":"ET",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Falkland Islands (Malvinas)",
+      "code":"FK",
+      "buff":{
+         "description":"mist",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Faroe Islands",
+      "code":"FO",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Fiji",
+      "code":"FJ",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Finland",
+      "code":"FI",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"France",
+      "code":"FR",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"French Guiana",
+      "code":"GF",
+      "buff":{
+         "description":"snow",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"French Polynesia",
+      "code":"PF",
+      "buff":{
+         "description":"snow",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"French Southern Territories",
+      "code":"TF",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Gabon",
+      "code":"GA",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Gambia",
+      "code":"GM",
+      "buff":{
+         "description":"snow",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Georgia",
+      "code":"GE",
+      "buff":{
+         "description":"snow",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Germany",
+      "code":"DE",
+      "buff":{
+         "description":"snow",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Ghana",
+      "code":"GH",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Gibraltar",
+      "code":"GI",
+      "buff":{
+         "description":"mist",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Greece",
+      "code":"GR",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Greenland",
+      "code":"GL",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Grenada",
+      "code":"GD",
+      "buff":{
+         "description":"rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Guadeloupe",
+      "code":"GP",
+      "buff":{
+         "description":"rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Guam",
+      "code":"GU",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Guatemala",
+      "code":"GT",
+      "buff":{
+         "description":"snow",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Guernsey",
+      "code":"GG",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Guinea",
+      "code":"GN",
+      "buff":{
+         "description":"rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Guinea-Bissau",
+      "code":"GW",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Guyana",
+      "code":"GY",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Haiti",
+      "code":"HT",
+      "buff":{
+         "description":"mist",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Heard Island and Mcdonald Islands",
+      "code":"HM",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Holy See (Vatican City State)",
+      "code":"VA",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Honduras",
+      "code":"HN",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Hong Kong",
+      "code":"HK",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Hungary",
+      "code":"HU",
+      "buff":{
+         "description":"rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Iceland",
+      "code":"IS",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"India",
+      "code":"IN",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Indonesia",
+      "code":"ID",
+      "buff":{
+         "description":"mist",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Iran, Islamic Republic Of",
+      "code":"IR",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Iraq",
+      "code":"IQ",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Ireland",
+      "code":"IE",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Isle of Man",
+      "code":"IM",
+      "buff":{
+         "description":"mist",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Israel",
+      "code":"IL",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Italy",
+      "code":"IT",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Jamaica",
+      "code":"JM",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Japan",
+      "code":"JP",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Jersey",
+      "code":"JE",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Jordan",
+      "code":"JO",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Kazakhstan",
+      "code":"KZ",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Kenya",
+      "code":"KE",
+      "buff":{
+         "description":"rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Kiribati",
+      "code":"KI",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Korea, Democratic People\"S Republic of",
+      "code":"KP",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Korea, Republic of",
+      "code":"KR",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Kuwait",
+      "code":"KW",
+      "buff":{
+         "description":"snow",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Kyrgyzstan",
+      "code":"KG",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Lao People\"S Democratic Republic",
+      "code":"LA",
+      "buff":{
+         "description":"rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Latvia",
+      "code":"LV",
+      "buff":{
+         "description":"mist",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Lebanon",
+      "code":"LB",
+      "buff":{
+         "description":"mist",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Lesotho",
+      "code":"LS",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Liberia",
+      "code":"LR",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Libyan Arab Jamahiriya",
+      "code":"LY",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Liechtenstein",
+      "code":"LI",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Lithuania",
+      "code":"LT",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Luxembourg",
+      "code":"LU",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Macao",
+      "code":"MO",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Macedonia, The Former Yugoslav Republic of",
+      "code":"MK",
+      "buff":{
+         "description":"mist",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Madagascar",
+      "code":"MG",
+      "buff":{
+         "description":"rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Malawi",
+      "code":"MW",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Malaysia",
+      "code":"MY",
+      "buff":{
+         "description":"mist",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Maldives",
+      "code":"MV",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Mali",
+      "code":"ML",
+      "buff":{
+         "description":"mist",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Malta",
+      "code":"MT",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Marshall Islands",
+      "code":"MH",
+      "buff":{
+         "description":"rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Martinique",
+      "code":"MQ",
+      "buff":{
+         "description":"rain",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Mauritania",
+      "code":"MR",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Mauritius",
+      "code":"MU",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Mayotte",
+      "code":"YT",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Mexico",
+      "code":"MX",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Micronesia, Federated States of",
+      "code":"FM",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Moldova, Republic of",
+      "code":"MD",
+      "buff":{
+         "description":"mist",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Monaco",
+      "code":"MC",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Mongolia",
+      "code":"MN",
+      "buff":{
+         "description":"snow",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Montenegro",
+      "code":"ME",
+      "buff":{
+         "description":"mist",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Montserrat",
+      "code":"MS",
+      "buff":{
+         "description":"rain",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Morocco",
+      "code":"MA",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Mozambique",
+      "code":"MZ",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Myanmar",
+      "code":"MM",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Namibia",
+      "code":"NA",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Nauru",
+      "code":"NR",
+      "buff":{
+         "description":"mist",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Nepal",
+      "code":"NP",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Netherlands",
+      "code":"NL",
+      "buff":{
+         "description":"mist",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Netherlands Antilles",
+      "code":"AN",
+      "buff":{
+         "description":"mist",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"New Caledonia",
+      "code":"NC",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"New Zealand",
+      "code":"NZ",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Nicaragua",
+      "code":"NI",
+      "buff":{
+         "description":"rain",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Niger",
+      "code":"NE",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Nigeria",
+      "code":"NG",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Niue",
+      "code":"NU",
+      "buff":{
+         "description":"mist",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Norfolk Island",
+      "code":"NF",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Northern Mariana Islands",
+      "code":"MP",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Norway",
+      "code":"NO",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Oman",
+      "code":"OM",
+      "buff":{
+         "description":"rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Pakistan",
+      "code":"PK",
+      "buff":{
+         "description":"snow",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Palau",
+      "code":"PW",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Palestinian Territory, Occupied",
+      "code":"PS",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Panama",
+      "code":"PA",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Papua New Guinea",
+      "code":"PG",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Paraguay",
+      "code":"PY",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Peru",
+      "code":"PE",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Philippines",
+      "code":"PH",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Pitcairn",
+      "code":"PN",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Poland",
+      "code":"PL",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Portugal",
+      "code":"PT",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Puerto Rico",
+      "code":"PR",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Qatar",
+      "code":"QA",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Reunion",
+      "code":"RE",
+      "buff":{
+         "description":"mist",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Romania",
+      "code":"RO",
+      "buff":{
+         "description":"rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Russian Federation",
+      "code":"RU",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"RWANDA",
+      "code":"RW",
+      "buff":{
+         "description":"snow",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Saint Helena",
+      "code":"SH",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Saint Kitts and Nevis",
+      "code":"KN",
+      "buff":{
+         "description":"snow",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Saint Lucia",
+      "code":"LC",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Saint Pierre and Miquelon",
+      "code":"PM",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Saint Vincent and the Grenadines",
+      "code":"VC",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Samoa",
+      "code":"WS",
+      "buff":{
+         "description":"mist",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"San Marino",
+      "code":"SM",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Sao Tome and Principe",
+      "code":"ST",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Saudi Arabia",
+      "code":"SA",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Senegal",
+      "code":"SN",
+      "buff":{
+         "description":"rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Serbia",
+      "code":"RS",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Seychelles",
+      "code":"SC",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Sierra Leone",
+      "code":"SL",
+      "buff":{
+         "description":"snow",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Singapore",
+      "code":"SG",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Slovakia",
+      "code":"SK",
+      "buff":{
+         "description":"snow",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Slovenia",
+      "code":"SI",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Solomon Islands",
+      "code":"SB",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Somalia",
+      "code":"SO",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"South Africa",
+      "code":"ZA",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"South Georgia and the South Sandwich Islands",
+      "code":"GS",
+      "buff":{
+         "description":"snow",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Spain",
+      "code":"ES",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Sri Lanka",
+      "code":"LK",
+      "buff":{
+         "description":"mist",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Sudan",
+      "code":"SD",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Suriname",
+      "code":"SR",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Svalbard and Jan Mayen",
+      "code":"SJ",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Swaziland",
+      "code":"SZ",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Sweden",
+      "code":"SE",
+      "buff":{
+         "description":"mist",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Switzerland",
+      "code":"CH",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Syrian Arab Republic",
+      "code":"SY",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Taiwan, Province of China",
+      "code":"TW",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Tajikistan",
+      "code":"TJ",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Tanzania, United Republic of",
+      "code":"TZ",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Thailand",
+      "code":"TH",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Timor-Leste",
+      "code":"TL",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Togo",
+      "code":"TG",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Tokelau",
+      "code":"TK",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Tonga",
+      "code":"TO",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Trinidad and Tobago",
+      "code":"TT",
+      "buff":{
+         "description":"snow",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Tunisia",
+      "code":"TN",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Turkey",
+      "code":"TR",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Turkmenistan",
+      "code":"TM",
+      "buff":{
+         "description":"scattered clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Turks and Caicos Islands",
+      "code":"TC",
+      "buff":{
+         "description":"rain",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Tuvalu",
+      "code":"TV",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Uganda",
+      "code":"UG",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Ukraine",
+      "code":"UA",
+      "buff":{
+         "description":"mist",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"United Arab Emirates",
+      "code":"AE",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"United Kingdom",
+      "code":"GB",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"United States",
+      "code":"US",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"United States Minor Outlying Islands",
+      "code":"UM",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Uruguay",
+      "code":"UY",
+      "buff":{
+         "description":"thunderstorm",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Uzbekistan",
+      "code":"UZ",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Vanuatu",
+      "code":"VU",
+      "buff":{
+         "description":"shower rain",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Venezuela",
+      "code":"VE",
+      "buff":{
+         "description":"mist",
+         "multiplier":3.5
+      }
+   },
+   {
+      "name":"Viet Nam",
+      "code":"VN",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Virgin Islands, British",
+      "code":"VG",
+      "buff":{
+         "description":"mist",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Virgin Islands, U.S.",
+      "code":"VI",
+      "buff":{
+         "description":"mist",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Wallis and Futuna",
+      "code":"WF",
+      "buff":{
+         "description":"snow",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Western Sahara",
+      "code":"EH",
+      "buff":{
+         "description":"clear sky",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Yemen",
+      "code":"YE",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":2.5
+      }
+   },
+   {
+      "name":"Zambia",
+      "code":"ZM",
+      "buff":{
+         "description":"broken clouds",
+         "multiplier":1.5
+      }
+   },
+   {
+      "name":"Zimbabwe",
+      "code":"ZW",
+      "buff":{
+         "description":"few clouds",
+         "multiplier":2.5
+      }
+   }
+]
