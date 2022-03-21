@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Thread_Racing_Game.Enum
+namespace Thread_Racing_Game.Enums
 {
     class Class1
     {

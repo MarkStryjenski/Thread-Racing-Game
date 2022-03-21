@@ -132,7 +132,7 @@
   <ItemGroup>
     <Compile Include="Activation\ActivationHandler.cs" />
     <Compile Include="Classes\Class1.cs" />
-    <Compile Include="Enum\Class1.cs" />
+    <Compile Include="Enums\Class1.cs" />
     <Compile Include="Helpers\NavHelper.cs" />
     <Compile Include="Helpers\SettingsStorageExtensions.cs" />
     <Compile Include="Interfaces\Interface1.cs" />
