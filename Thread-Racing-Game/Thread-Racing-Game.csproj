@@ -131,7 +131,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activation\ActivationHandler.cs" />
+    <Compile Include="Classes\Bet.cs" />
+    <Compile Include="Classes\Car.cs" />
+    <Compile Include="Classes\Casino.cs" />
     <Compile Include="Classes\Class1.cs" />
+    <Compile Include="Classes\GameState.cs" />
+    <Compile Include="Classes\Race.cs" />
+    <Compile Include="Classes\RepairTeam.cs" />
+    <Compile Include="Classes\Team.cs" />
+    <Compile Include="Classes\User.cs" />
     <Compile Include="Enums\Class1.cs" />
     <Compile Include="Helpers\NavHelper.cs" />
     <Compile Include="Helpers\SettingsStorageExtensions.cs" />
