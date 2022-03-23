@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Thread_Racing_Game.Enums
 {
-    class Class1
+    enum State
     {
+        WAITING,
+        IN_PROGRESS,
+        FINISHED
     }
 }
