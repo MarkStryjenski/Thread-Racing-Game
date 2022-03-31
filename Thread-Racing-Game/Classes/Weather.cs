@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Thread_Racing_Game.Classes
 {
-    class Weather
+    public class Weather
     {
         private String condition;
         private String locationName;

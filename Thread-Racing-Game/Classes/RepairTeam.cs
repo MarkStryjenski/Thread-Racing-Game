@@ -9,6 +9,7 @@ namespace Thread_Racing_Game.Classes
     public class RepairTeam
     {
         private int repairSkill;
+
         public int RepairSkill
         {
             get { return repairSkill; }

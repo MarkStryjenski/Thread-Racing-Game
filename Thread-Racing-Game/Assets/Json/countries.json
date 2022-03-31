@@ -4,7 +4,7 @@
       "code":"AF",
       "buff":{
          "description":"mist",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -12,7 +12,7 @@
       "code":"AX",
       "buff":{
          "description":"broken clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -20,7 +20,7 @@
       "code":"AL",
       "buff":{
          "description":"mist",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -28,7 +28,7 @@
       "code":"DZ",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -36,7 +36,7 @@
       "code":"AS",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -44,7 +44,7 @@
       "code":"AD",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -52,7 +52,7 @@
       "code":"AO",
       "buff":{
          "description":"broken clouds",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -60,7 +60,7 @@
       "code":"AI",
       "buff":{
          "description":"few clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -68,7 +68,7 @@
       "code":"AQ",
       "buff":{
          "description":"snow",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -76,7 +76,7 @@
       "code":"AG",
       "buff":{
          "description":"few clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -84,7 +84,7 @@
       "code":"AR",
       "buff":{
          "description":"clear sky",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -92,7 +92,7 @@
       "code":"AM",
       "buff":{
          "description":"clear sky",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -100,7 +100,7 @@
       "code":"AW",
       "buff":{
          "description":"rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -108,7 +108,7 @@
       "code":"AU",
       "buff":{
          "description":"shower rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -116,7 +116,7 @@
       "code":"AT",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -124,7 +124,7 @@
       "code":"AZ",
       "buff":{
          "description":"clear sky",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -132,7 +132,7 @@
       "code":"BS",
       "buff":{
          "description":"shower rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -140,7 +140,7 @@
       "code":"BH",
       "buff":{
          "description":"clear sky",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -148,7 +148,7 @@
       "code":"BD",
       "buff":{
          "description":"few clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -156,7 +156,7 @@
       "code":"BB",
       "buff":{
          "description":"snow",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -164,7 +164,7 @@
       "code":"BY",
       "buff":{
          "description":"shower rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -172,7 +172,7 @@
       "code":"BE",
       "buff":{
          "description":"mist",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -180,7 +180,7 @@
       "code":"BZ",
       "buff":{
          "description":"clear sky",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -188,7 +188,7 @@
       "code":"BJ",
       "buff":{
          "description":"shower rain",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -196,7 +196,7 @@
       "code":"BM",
       "buff":{
          "description":"few clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -204,7 +204,7 @@
       "code":"BT",
       "buff":{
          "description":"clear sky",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -212,7 +212,7 @@
       "code":"BO",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -220,7 +220,7 @@
       "code":"BA",
       "buff":{
          "description":"clear sky",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -228,7 +228,7 @@
       "code":"BW",
       "buff":{
          "description":"rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -236,7 +236,7 @@
       "code":"BV",
       "buff":{
          "description":"rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -244,7 +244,7 @@
       "code":"BR",
       "buff":{
          "description":"mist",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -252,7 +252,7 @@
       "code":"IO",
       "buff":{
          "description":"shower rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -260,7 +260,7 @@
       "code":"BN",
       "buff":{
          "description":"shower rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -268,7 +268,7 @@
       "code":"BG",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -276,7 +276,7 @@
       "code":"BF",
       "buff":{
          "description":"rain",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -284,7 +284,7 @@
       "code":"BI",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -292,7 +292,7 @@
       "code":"KH",
       "buff":{
          "description":"mist",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -300,7 +300,7 @@
       "code":"CM",
       "buff":{
          "description":"mist",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -308,7 +308,7 @@
       "code":"CA",
       "buff":{
          "description":"mist",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -316,7 +316,7 @@
       "code":"CV",
       "buff":{
          "description":"few clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -324,7 +324,7 @@
       "code":"KY",
       "buff":{
          "description":"mist",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -332,7 +332,7 @@
       "code":"CF",
       "buff":{
          "description":"few clouds",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -340,7 +340,7 @@
       "code":"TD",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -348,7 +348,7 @@
       "code":"CL",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -356,7 +356,7 @@
       "code":"CN",
       "buff":{
          "description":"rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -364,7 +364,7 @@
       "code":"CX",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -372,7 +372,7 @@
       "code":"CC",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -380,7 +380,7 @@
       "code":"CO",
       "buff":{
          "description":"clear sky",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -388,7 +388,7 @@
       "code":"KM",
       "buff":{
          "description":"snow",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -396,7 +396,7 @@
       "code":"CG",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -404,7 +404,7 @@
       "code":"CD",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -412,7 +412,7 @@
       "code":"CK",
       "buff":{
          "description":"few clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -420,7 +420,7 @@
       "code":"CR",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -428,7 +428,7 @@
       "code":"CI",
       "buff":{
          "description":"mist",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -436,7 +436,7 @@
       "code":"HR",
       "buff":{
          "description":"shower rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -444,7 +444,7 @@
       "code":"CU",
       "buff":{
          "description":"few clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -452,7 +452,7 @@
       "code":"CY",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -460,7 +460,7 @@
       "code":"CZ",
       "buff":{
          "description":"broken clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -468,7 +468,7 @@
       "code":"DK",
       "buff":{
          "description":"snow",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -476,7 +476,7 @@
       "code":"DJ",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -484,7 +484,7 @@
       "code":"DM",
       "buff":{
          "description":"broken clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -492,7 +492,7 @@
       "code":"DO",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -500,7 +500,7 @@
       "code":"EC",
       "buff":{
          "description":"mist",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -508,7 +508,7 @@
       "code":"EG",
       "buff":{
          "description":"mist",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -516,7 +516,7 @@
       "code":"SV",
       "buff":{
          "description":"few clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -524,7 +524,7 @@
       "code":"GQ",
       "buff":{
          "description":"shower rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -532,7 +532,7 @@
       "code":"ER",
       "buff":{
          "description":"rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -540,7 +540,7 @@
       "code":"EE",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -548,7 +548,7 @@
       "code":"ET",
       "buff":{
          "description":"broken clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -556,7 +556,7 @@
       "code":"FK",
       "buff":{
          "description":"mist",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -564,7 +564,7 @@
       "code":"FO",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -572,7 +572,7 @@
       "code":"FJ",
       "buff":{
          "description":"broken clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -580,7 +580,7 @@
       "code":"FI",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -588,7 +588,7 @@
       "code":"FR",
       "buff":{
          "description":"shower rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -596,7 +596,7 @@
       "code":"GF",
       "buff":{
          "description":"snow",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -604,7 +604,7 @@
       "code":"PF",
       "buff":{
          "description":"snow",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -612,7 +612,7 @@
       "code":"TF",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -620,7 +620,7 @@
       "code":"GA",
       "buff":{
          "description":"shower rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -628,7 +628,7 @@
       "code":"GM",
       "buff":{
          "description":"snow",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -636,7 +636,7 @@
       "code":"GE",
       "buff":{
          "description":"snow",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -644,7 +644,7 @@
       "code":"DE",
       "buff":{
          "description":"snow",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -652,7 +652,7 @@
       "code":"GH",
       "buff":{
          "description":"shower rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -660,7 +660,7 @@
       "code":"GI",
       "buff":{
          "description":"mist",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -668,7 +668,7 @@
       "code":"GR",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -676,7 +676,7 @@
       "code":"GL",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -684,7 +684,7 @@
       "code":"GD",
       "buff":{
          "description":"rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -692,7 +692,7 @@
       "code":"GP",
       "buff":{
          "description":"rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -700,7 +700,7 @@
       "code":"GU",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -708,7 +708,7 @@
       "code":"GT",
       "buff":{
          "description":"snow",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -716,7 +716,7 @@
       "code":"GG",
       "buff":{
          "description":"shower rain",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -724,7 +724,7 @@
       "code":"GN",
       "buff":{
          "description":"rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -732,7 +732,7 @@
       "code":"GW",
       "buff":{
          "description":"shower rain",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -740,7 +740,7 @@
       "code":"GY",
       "buff":{
          "description":"shower rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -748,7 +748,7 @@
       "code":"HT",
       "buff":{
          "description":"mist",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -756,7 +756,7 @@
       "code":"HM",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -764,7 +764,7 @@
       "code":"VA",
       "buff":{
          "description":"broken clouds",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -772,7 +772,7 @@
       "code":"HN",
       "buff":{
          "description":"shower rain",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -780,7 +780,7 @@
       "code":"HK",
       "buff":{
          "description":"clear sky",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -788,7 +788,7 @@
       "code":"HU",
       "buff":{
          "description":"rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -796,7 +796,7 @@
       "code":"IS",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -804,7 +804,7 @@
       "code":"IN",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -812,7 +812,7 @@
       "code":"ID",
       "buff":{
          "description":"mist",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -820,7 +820,7 @@
       "code":"IR",
       "buff":{
          "description":"shower rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -828,7 +828,7 @@
       "code":"IQ",
       "buff":{
          "description":"few clouds",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -836,7 +836,7 @@
       "code":"IE",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -844,7 +844,7 @@
       "code":"IM",
       "buff":{
          "description":"mist",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -852,7 +852,7 @@
       "code":"IL",
       "buff":{
          "description":"clear sky",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -860,7 +860,7 @@
       "code":"IT",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -868,7 +868,7 @@
       "code":"JM",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -876,7 +876,7 @@
       "code":"JP",
       "buff":{
          "description":"broken clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -884,7 +884,7 @@
       "code":"JE",
       "buff":{
          "description":"broken clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -892,7 +892,7 @@
       "code":"JO",
       "buff":{
          "description":"few clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -900,7 +900,7 @@
       "code":"KZ",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -908,7 +908,7 @@
       "code":"KE",
       "buff":{
          "description":"rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -916,7 +916,7 @@
       "code":"KI",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -924,7 +924,7 @@
       "code":"KP",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -932,7 +932,7 @@
       "code":"KR",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -940,7 +940,7 @@
       "code":"KW",
       "buff":{
          "description":"snow",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -948,7 +948,7 @@
       "code":"KG",
       "buff":{
          "description":"clear sky",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -956,7 +956,7 @@
       "code":"LA",
       "buff":{
          "description":"rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -964,7 +964,7 @@
       "code":"LV",
       "buff":{
          "description":"mist",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -972,7 +972,7 @@
       "code":"LB",
       "buff":{
          "description":"mist",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -980,7 +980,7 @@
       "code":"LS",
       "buff":{
          "description":"few clouds",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -988,7 +988,7 @@
       "code":"LR",
       "buff":{
          "description":"clear sky",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -996,7 +996,7 @@
       "code":"LY",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1004,7 +1004,7 @@
       "code":"LI",
       "buff":{
          "description":"shower rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1012,7 +1012,7 @@
       "code":"LT",
       "buff":{
          "description":"shower rain",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1020,7 +1020,7 @@
       "code":"LU",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1028,7 +1028,7 @@
       "code":"MO",
       "buff":{
          "description":"broken clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1036,7 +1036,7 @@
       "code":"MK",
       "buff":{
          "description":"mist",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1044,7 +1044,7 @@
       "code":"MG",
       "buff":{
          "description":"rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1052,7 +1052,7 @@
       "code":"MW",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1060,7 +1060,7 @@
       "code":"MY",
       "buff":{
          "description":"mist",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1068,7 +1068,7 @@
       "code":"MV",
       "buff":{
          "description":"few clouds",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1076,7 +1076,7 @@
       "code":"ML",
       "buff":{
          "description":"mist",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1084,7 +1084,7 @@
       "code":"MT",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1092,7 +1092,7 @@
       "code":"MH",
       "buff":{
          "description":"rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1100,7 +1100,7 @@
       "code":"MQ",
       "buff":{
          "description":"rain",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1108,7 +1108,7 @@
       "code":"MR",
       "buff":{
          "description":"few clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1116,7 +1116,7 @@
       "code":"MU",
       "buff":{
          "description":"broken clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1124,7 +1124,7 @@
       "code":"YT",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1132,7 +1132,7 @@
       "code":"MX",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1140,7 +1140,7 @@
       "code":"FM",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1148,7 +1148,7 @@
       "code":"MD",
       "buff":{
          "description":"mist",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1156,7 +1156,7 @@
       "code":"MC",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1164,7 +1164,7 @@
       "code":"MN",
       "buff":{
          "description":"snow",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1172,7 +1172,7 @@
       "code":"ME",
       "buff":{
          "description":"mist",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1180,7 +1180,7 @@
       "code":"MS",
       "buff":{
          "description":"rain",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1188,7 +1188,7 @@
       "code":"MA",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1196,7 +1196,7 @@
       "code":"MZ",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1204,7 +1204,7 @@
       "code":"MM",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1212,7 +1212,7 @@
       "code":"NA",
       "buff":{
          "description":"shower rain",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1220,7 +1220,7 @@
       "code":"NR",
       "buff":{
          "description":"mist",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1228,7 +1228,7 @@
       "code":"NP",
       "buff":{
          "description":"clear sky",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1236,7 +1236,7 @@
       "code":"NL",
       "buff":{
          "description":"mist",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1244,7 +1244,7 @@
       "code":"AN",
       "buff":{
          "description":"mist",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1252,7 +1252,7 @@
       "code":"NC",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1260,7 +1260,7 @@
       "code":"NZ",
       "buff":{
          "description":"clear sky",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1268,7 +1268,7 @@
       "code":"NI",
       "buff":{
          "description":"rain",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1276,7 +1276,7 @@
       "code":"NE",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1284,7 +1284,7 @@
       "code":"NG",
       "buff":{
          "description":"few clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1292,7 +1292,7 @@
       "code":"NU",
       "buff":{
          "description":"mist",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1300,7 +1300,7 @@
       "code":"NF",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1308,7 +1308,7 @@
       "code":"MP",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1316,7 +1316,7 @@
       "code":"NO",
       "buff":{
          "description":"shower rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1324,7 +1324,7 @@
       "code":"OM",
       "buff":{
          "description":"rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1332,7 +1332,7 @@
       "code":"PK",
       "buff":{
          "description":"snow",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1340,7 +1340,7 @@
       "code":"PW",
       "buff":{
          "description":"broken clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1348,7 +1348,7 @@
       "code":"PS",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1356,7 +1356,7 @@
       "code":"PA",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1364,7 +1364,7 @@
       "code":"PG",
       "buff":{
          "description":"clear sky",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1372,7 +1372,7 @@
       "code":"PY",
       "buff":{
          "description":"few clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1380,7 +1380,7 @@
       "code":"PE",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1388,7 +1388,7 @@
       "code":"PH",
       "buff":{
          "description":"few clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1396,7 +1396,7 @@
       "code":"PN",
       "buff":{
          "description":"broken clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1404,7 +1404,7 @@
       "code":"PL",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1412,7 +1412,7 @@
       "code":"PT",
       "buff":{
          "description":"broken clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1420,7 +1420,7 @@
       "code":"PR",
       "buff":{
          "description":"shower rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1428,7 +1428,7 @@
       "code":"QA",
       "buff":{
          "description":"shower rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1436,7 +1436,7 @@
       "code":"RE",
       "buff":{
          "description":"mist",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1444,7 +1444,7 @@
       "code":"RO",
       "buff":{
          "description":"rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1452,7 +1452,7 @@
       "code":"RU",
       "buff":{
          "description":"few clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1460,7 +1460,7 @@
       "code":"RW",
       "buff":{
          "description":"snow",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1468,7 +1468,7 @@
       "code":"SH",
       "buff":{
          "description":"few clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1476,7 +1476,7 @@
       "code":"KN",
       "buff":{
          "description":"snow",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1484,7 +1484,7 @@
       "code":"LC",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1492,7 +1492,7 @@
       "code":"PM",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1500,7 +1500,7 @@
       "code":"VC",
       "buff":{
          "description":"few clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1508,7 +1508,7 @@
       "code":"WS",
       "buff":{
          "description":"mist",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1516,7 +1516,7 @@
       "code":"SM",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1524,7 +1524,7 @@
       "code":"ST",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1532,7 +1532,7 @@
       "code":"SA",
       "buff":{
          "description":"few clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1540,7 +1540,7 @@
       "code":"SN",
       "buff":{
          "description":"rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1548,7 +1548,7 @@
       "code":"RS",
       "buff":{
          "description":"clear sky",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1556,7 +1556,7 @@
       "code":"SC",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1564,7 +1564,7 @@
       "code":"SL",
       "buff":{
          "description":"snow",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1572,7 +1572,7 @@
       "code":"SG",
       "buff":{
          "description":"broken clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1580,7 +1580,7 @@
       "code":"SK",
       "buff":{
          "description":"snow",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1588,7 +1588,7 @@
       "code":"SI",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1596,7 +1596,7 @@
       "code":"SB",
       "buff":{
          "description":"broken clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1604,7 +1604,7 @@
       "code":"SO",
       "buff":{
          "description":"shower rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1612,7 +1612,7 @@
       "code":"ZA",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1620,7 +1620,7 @@
       "code":"GS",
       "buff":{
          "description":"snow",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1628,7 +1628,7 @@
       "code":"ES",
       "buff":{
          "description":"broken clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1636,7 +1636,7 @@
       "code":"LK",
       "buff":{
          "description":"mist",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1644,7 +1644,7 @@
       "code":"SD",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1652,7 +1652,7 @@
       "code":"SR",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1660,7 +1660,7 @@
       "code":"SJ",
       "buff":{
          "description":"broken clouds",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1668,7 +1668,7 @@
       "code":"SZ",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1676,7 +1676,7 @@
       "code":"SE",
       "buff":{
          "description":"mist",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1684,7 +1684,7 @@
       "code":"CH",
       "buff":{
          "description":"few clouds",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1692,7 +1692,7 @@
       "code":"SY",
       "buff":{
          "description":"shower rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1700,7 +1700,7 @@
       "code":"TW",
       "buff":{
          "description":"broken clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1708,7 +1708,7 @@
       "code":"TJ",
       "buff":{
          "description":"few clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1716,7 +1716,7 @@
       "code":"TZ",
       "buff":{
          "description":"broken clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1724,7 +1724,7 @@
       "code":"TH",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1732,7 +1732,7 @@
       "code":"TL",
       "buff":{
          "description":"clear sky",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1740,7 +1740,7 @@
       "code":"TG",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1748,7 +1748,7 @@
       "code":"TK",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1756,7 +1756,7 @@
       "code":"TO",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1764,7 +1764,7 @@
       "code":"TT",
       "buff":{
          "description":"snow",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1772,7 +1772,7 @@
       "code":"TN",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1780,7 +1780,7 @@
       "code":"TR",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1788,7 +1788,7 @@
       "code":"TM",
       "buff":{
          "description":"scattered clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1796,7 +1796,7 @@
       "code":"TC",
       "buff":{
          "description":"rain",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1804,7 +1804,7 @@
       "code":"TV",
       "buff":{
          "description":"broken clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1812,7 +1812,7 @@
       "code":"UG",
       "buff":{
          "description":"shower rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1820,7 +1820,7 @@
       "code":"UA",
       "buff":{
          "description":"mist",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1828,7 +1828,7 @@
       "code":"AE",
       "buff":{
          "description":"shower rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1836,7 +1836,7 @@
       "code":"GB",
       "buff":{
          "description":"clear sky",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1844,7 +1844,7 @@
       "code":"US",
       "buff":{
          "description":"shower rain",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1852,7 +1852,7 @@
       "code":"UM",
       "buff":{
          "description":"few clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1860,7 +1860,7 @@
       "code":"UY",
       "buff":{
          "description":"thunderstorm",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1868,7 +1868,7 @@
       "code":"UZ",
       "buff":{
          "description":"broken clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1876,7 +1876,7 @@
       "code":"VU",
       "buff":{
          "description":"shower rain",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1884,7 +1884,7 @@
       "code":"VE",
       "buff":{
          "description":"mist",
-         "multiplier":3.5
+         "multiplier":3.0
       }
    },
    {
@@ -1892,7 +1892,7 @@
       "code":"VN",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1900,7 +1900,7 @@
       "code":"VG",
       "buff":{
          "description":"mist",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1908,7 +1908,7 @@
       "code":"VI",
       "buff":{
          "description":"mist",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1916,7 +1916,7 @@
       "code":"WF",
       "buff":{
          "description":"snow",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1924,7 +1924,7 @@
       "code":"EH",
       "buff":{
          "description":"clear sky",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1932,7 +1932,7 @@
       "code":"YE",
       "buff":{
          "description":"few clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    },
    {
@@ -1940,7 +1940,7 @@
       "code":"ZM",
       "buff":{
          "description":"broken clouds",
-         "multiplier":1.5
+         "multiplier":1.0
       }
    },
    {
@@ -1948,7 +1948,7 @@
       "code":"ZW",
       "buff":{
          "description":"few clouds",
-         "multiplier":2.5
+         "multiplier":2.0
       }
    }
 ]
