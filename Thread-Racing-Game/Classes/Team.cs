@@ -7,7 +7,7 @@ using Thread_Racing_Game.Core.Models;
 
 namespace Thread_Racing_Game.Classes
 {
-    class Team
+    public class Team
     {
         private string name;
         public string Name
@@ -15,9 +15,9 @@ namespace Thread_Racing_Game.Classes
             get { return name; }
             set { name = value; }
         }
-        private RepairTeam RepairTeam;
-        private Car Car;
-        private Country Country;
+        public RepairTeam RepairTeam { get; set; }
+        public Car Car { get; set; }
+        public Country Country { get; set; }
 
         public Team(string name, RepairTeam repairTeam, Car car, Country country)
         {
@@ -30,6 +30,8 @@ namespace Thread_Racing_Game.Classes
         public Team GetTeamOverview() {
             return new Team(Name, RepairTeam, Car, Country);
         }
+
+
 
         // TODO: Get team country flag
     }

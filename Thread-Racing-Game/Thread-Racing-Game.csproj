@@ -125,6 +125,9 @@
     <PackageReference Include="Microsoft.Xaml.Behaviors.Uwp.Managed">
       <Version>2.0.1</Version>
     </PackageReference>
+    <PackageReference Include="Win2D.uwp">
+      <Version>1.26.0</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <PRIResource Include="Strings\en-us\Resources.resw" />
@@ -138,9 +141,11 @@
     <Compile Include="Classes\GameState.cs" />
     <Compile Include="Classes\Race.cs" />
     <Compile Include="Classes\RepairTeam.cs" />
+    <Compile Include="Classes\Scaling.cs" />
     <Compile Include="Classes\Team.cs" />
     <Compile Include="Classes\User.cs" />
-    <Compile Include="Enums\Class1.cs" />
+    <Compile Include="Classes\Weather.cs" />
+    <Compile Include="Enums\State.cs" />
     <Compile Include="Helpers\NavHelper.cs" />
     <Compile Include="Helpers\SettingsStorageExtensions.cs" />
     <Compile Include="Helpers\Utility.cs" />
@@ -466,6 +471,7 @@
     <Content Include="Assets\Flags\za.png" />
     <Content Include="Assets\Flags\zm.png" />
     <Content Include="Assets\Flags\zw.png" />
+    <Content Include="Assets\Images\race-track-with-start-finish-line.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
