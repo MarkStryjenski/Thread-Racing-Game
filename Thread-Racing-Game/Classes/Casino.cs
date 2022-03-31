@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Thread_Racing_Game.Classes
 {
-    class Casino
+    public class Casino
     {
     }
 }

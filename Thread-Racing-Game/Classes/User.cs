@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Thread_Racing_Game.Classes
 {
-    class User
+    public class User
     {
-        private double money;
-        private Bet currenBet;
-        private List<Bet> pastBets;
+        public double money { get; set; }
+        public Bet currentBet { get; set; }
+        public List<Bet> pastBets { get; set; }
 
         public User(double money)
         {
@@ -19,7 +19,7 @@ namespace Thread_Racing_Game.Classes
 
         public void placeBet(Bet bet)
         {
-            this.currenBet = bet;
+            this.currentBet = bet;
         }
     }
 }

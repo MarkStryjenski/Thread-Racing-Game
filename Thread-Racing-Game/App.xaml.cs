@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Thread_Racing_Game.Classes;
 using Thread_Racing_Game.Services;
 
 using Windows.ApplicationModel.Activation;
