@@ -34,15 +34,27 @@ namespace Thread_Racing_Game.Classes
             set { requiresPitStop = value; }
         }
 
+        public double multiplier { get; set; }
+
         public event EventHandler ProcessCompleted;
 
+        ///<summary>
+        ///Top speed needs to be even number
+        ///</summary>
         public Car(double topSpeed)
         {
-            TopSpeed = topSpeed;
-            WheelHealth = 0;
-            EngineHealth = 0;
-            RequiresPitStop = false;
-
+            if (topSpeed % 2 != 0)
+            {
+                topSpeed = 50;
+            }
+            else
+            {
+                TopSpeed = topSpeed;
+            }
+            this.WheelHealth = 100;
+            this.EngineHealth = 100;
+            this.RequiresPitStop = false;
+            this.multiplier = 0;
         }
 
         public virtual void OnProcessCompleted(EventArgs e)
@@ -52,33 +64,42 @@ namespace Thread_Racing_Game.Classes
 
         public double generateCurrentSpeed()
         {
-            double speed=(this.wheelHealth + this.engineHealth)/2+topSpeed;
-            if (this.wheelHealth < 10)
+            double speed = 0;
+            if (isCarBroken())
             {
                 Console.WriteLine("Process Started!");
                 OnProcessCompleted(EventArgs.Empty);
             }
-            this.wheelHealth = this.wheelHealth - 1;
-            this.engineHealth = this.engineHealth - 1;
+            if (this.multiplier != 0)
+            {
+                speed = (this.topSpeed + (this.multiplier * 5)) / 2;
+            }
+            else
+            {
+                speed = (this.topSpeed) / 2;
+            }
+            this.wheelHealth = this.wheelHealth - 10;
+            this.engineHealth = this.engineHealth - 10;
             return speed;
         }
 
-        public async Task<double> findBuffMultiplier(string countryName, string weatherDescription)
-        {
-            double multiplier = 0.0;
-            List<Country> countries = await Helpers.Utility.GetCountries();
+        //public async Task<double> findBuffMultiplier(string countryName, string weatherDescription)
+        //{
+        //    double multiplier = 0.0;
+        //    List<Country> countries = await Helpers.Utility.GetCountries();
 
-            foreach (Country c in countries)
-            {
-                if (c.Name == countryName && c.Buff.Description == weatherDescription)
-                {
-                    multiplier = c.Buff.Multiplier;
-                    break;
-                }
-            }
+        //    foreach (Country c in countries)
+        //    {
+        //        if (c.Name == countryName && c.Buff.Description == weatherDescription)
+        //        {
+        //            multiplier = c.Buff.Multiplier;
+        //            break;
+        //        }
+        //    }
 
-            return multiplier;
-        }
+        //    return multiplier;
+        //}
+
 
         public bool isCarBroken()
         {
