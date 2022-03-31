@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Thread_Racing_Game.Classes
 {
-    class RepairTeam
+    public class RepairTeam
     {
         private int repairSkill;
         public int RepairSkill
@@ -17,22 +17,34 @@ namespace Thread_Racing_Game.Classes
 
         public RepairTeam(int repairSkill)
         {
-            this.repairSkill = repairSkill;
+            if(repairSkill>10 || repairSkill < 1)
+            {
+                this.repairSkill = 5;
+            }
+            else
+            {
+                this.repairSkill = repairSkill;
+            }
         }
 
-        private async Task Repair()
+        //public async Task Repair()
+        //{
+        //    await Task.Run(() => Console.WriteLine("To be implemented"));
+        //}
+        public int Repair()
         {
-            await Task.Run(() => Console.WriteLine("To be implemented"));
+            return this.repairSkill;
         }
 
-        private void RepairWheel()
-        {
+        //public void RepairWheel()
+        //{
 
-        }
+        //}
 
-        private void RepairHealth()
-        {
+        //public void RepairHealth()
+        //{
 
-        }
+        //}
+
     }
 }

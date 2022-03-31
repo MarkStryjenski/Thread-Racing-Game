@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Thread_Racing_Game.Classes
 {
-    class Bet
+    public class Bet
     {
-        private double amount;
-        private Team team;
-        private double returnRate;
-        private double profitLoss;
-        
+        public double amount { get; set; }
+        public Team team { get; set; }
+        public double returnRate { get; set; }
+        public double profitLoss { get; set; }
+
         public Bet(double amount, Team team)
         {
             this.amount = amount;

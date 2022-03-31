@@ -1,6 +1,7 @@
 ﻿using Microsoft.Graphics.Canvas;
 using Microsoft.Graphics.Canvas.UI.Xaml;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Runtime.CompilerServices;
@@ -23,10 +24,24 @@ namespace Thread_Racing_Game.Views
         public static float DesignWidth = 1800;
         public static float DesignHeght = 720;
         public static float scaleWidth, scaleHeight;
+        public GameState gameState;
 
         public MainPage()
         {
             InitializeComponent();
+            User user = new User(100);
+
+            RepairTeam repairTeam = new RepairTeam(10);
+            Car car = new Car(100);
+            Team alfaTeam = new Team("Alfa", repairTeam, car,null);
+            List<Team> teamsList = new List<Team>();
+            teamsList.Add(alfaTeam);
+            Race race = new Race(150,teamsList);
+
+            this.gameState = new GameState(race, null, user);
+
+            this.gameState.race.pitStopSemaphore(alfaTeam);
+
             Window.Current.SizeChanged += Current_SizeChanged;
             Scaling.setScale();
             DataContext = this;
@@ -80,7 +95,7 @@ namespace Thread_Racing_Game.Views
             if (Equals(storage, value))
             {
                 return;
-            }
+            }       
 
             storage = value;
             OnPropertyChanged(propertyName);
