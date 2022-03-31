@@ -34,12 +34,18 @@ namespace Thread_Racing_Game.Views
             RepairTeam repairTeam = new RepairTeam(10);
             Car car = new Car(100);
             Team alfaTeam = new Team("Alfa", repairTeam, car,null);
+            Team betaTeam = new Team("Beta", repairTeam, car, null);
+            Team gammaTeam = new Team("Gamma", repairTeam, car, null);
+            Team omegaTeam = new Team("Omega", repairTeam, car, null);
             List<Team> teamsList = new List<Team>();
             teamsList.Add(alfaTeam);
+            teamsList.Add(betaTeam);
+            teamsList.Add(gammaTeam);
+            teamsList.Add(omegaTeam);
             Weather weather = new Weather();
-            Race race = new Race(150,teamsList,weather);
+            Race race = new Race(150,teamsList);
 
-            this.gameState = new GameState(race, null, user);
+            this.gameState = new GameState(race, null);
 
             this.gameState.race.pitStopSemaphore(alfaTeam);
 

@@ -23,13 +23,15 @@ namespace Thread_Racing_Game.Classes
         public Team team { get; set; }
         public Weather weather { get; set; }
 
-        public Race(double distance,List<Team> attendingTeams,Weather weather)
+        public Race(double distance,List<Team> attendingTeams)
         {
             this.Distance = distance;
             this.AttendingTeams = attendingTeams;
             this.checker = new SemaphoreSlim(this.AttendingTeams.Count());
             this.listOfThreads = new Thread[this.AttendingTeams.Count()];
-            this.weather = weather;
+            this.weather = new Weather();
+            //team.Car.ProcessCompleted += car_ProcessCompleted;
+            //team.Car.generateCurrentSpeed();
             //RepairTeam repairTeam = new RepairTeam(10);
             //Car car = new Car(100);
             //this.team = new Team("Alfa", repairTeam, car, null);

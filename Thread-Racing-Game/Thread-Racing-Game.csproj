@@ -138,7 +138,9 @@
     <Compile Include="Classes\Car.cs" />
     <Compile Include="Classes\Casino.cs" />
     <Compile Include="Classes\Class1.cs" />
+    <Compile Include="Classes\GameController.cs" />
     <Compile Include="Classes\GameState.cs" />
+    <Compile Include="Classes\InitialGameHelper.cs" />
     <Compile Include="Classes\Race.cs" />
     <Compile Include="Classes\RepairTeam.cs" />
     <Compile Include="Classes\Scaling.cs" />
