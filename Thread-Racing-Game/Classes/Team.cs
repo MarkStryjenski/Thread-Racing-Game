@@ -31,6 +31,23 @@ namespace Thread_Racing_Game.Classes
             return new Team(Name, RepairTeam, Car, Country);
         }
 
+        public async Task<double> findBuffMultiplier(Weather weatherDescription)
+        {
+            double multiplier = 0.0;
+            List<Country> countries = await Helpers.Utility.GetCountries();
+
+            foreach (Country c in countries)
+            {
+                if (c.Name == Country.Name && c.Buff.Description == weatherDescription.Condition)
+                {
+                    multiplier = c.Buff.Multiplier;
+                    this.Car.multiplier = c.Buff.Multiplier;
+                    break;
+                }
+            }
+
+            return multiplier;
+        }
 
 
         // TODO: Get team country flag

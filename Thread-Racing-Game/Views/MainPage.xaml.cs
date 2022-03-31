@@ -39,7 +39,8 @@ namespace Thread_Racing_Game.Views
             Team alfaTeam = new Team("Alfa", repairTeam, car,null);
             List<Team> teamsList = new List<Team>();
             teamsList.Add(alfaTeam);
-            Race race = new Race(150,teamsList);
+            Weather weather = new Weather();
+            Race race = new Race(150,teamsList,weather);
 
             this.gameState = new GameState(race, null, user);
 
