@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Thread_Racing_Game.Enums;
 
 namespace Thread_Racing_Game.Classes
 {
@@ -78,7 +79,6 @@ namespace Thread_Racing_Game.Classes
         {
             Console.WriteLine("Process completed");
         }
-
 
     }
 }

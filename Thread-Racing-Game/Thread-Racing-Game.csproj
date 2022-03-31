@@ -144,7 +144,8 @@
     <Compile Include="Classes\Scaling.cs" />
     <Compile Include="Classes\Team.cs" />
     <Compile Include="Classes\User.cs" />
-    <Compile Include="Enums\Class1.cs" />
+    <Compile Include="Classes\Weather.cs" />
+    <Compile Include="Enums\State.cs" />
     <Compile Include="Helpers\NavHelper.cs" />
     <Compile Include="Helpers\SettingsStorageExtensions.cs" />
     <Compile Include="Helpers\Utility.cs" />
