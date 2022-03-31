@@ -44,21 +44,23 @@ namespace Thread_Racing_Game.Classes
             RequiresPitStop = false;
 
         }
-        public void StartProcess()
-        {
-            Console.WriteLine("Process Started!");
-            // some code here..
-            OnProcessCompleted(EventArgs.Empty);
-        }
+
         public virtual void OnProcessCompleted(EventArgs e)
         {
             ProcessCompleted?.Invoke(this,e);
         }
 
-        public double generateCurrentSpeed(double multiplier)
+        public double generateCurrentSpeed()
         {
-            TopSpeed *= multiplier;
-            return TopSpeed;
+            double speed=(this.wheelHealth + this.engineHealth)/2+topSpeed;
+            if (this.wheelHealth < 10)
+            {
+                Console.WriteLine("Process Started!");
+                OnProcessCompleted(EventArgs.Empty);
+            }
+            this.wheelHealth = this.wheelHealth - 1;
+            this.engineHealth = this.engineHealth - 1;
+            return speed;
         }
 
         public async Task<double> findBuffMultiplier(string countryName, string weatherDescription)
