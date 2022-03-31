@@ -13,6 +13,7 @@ namespace Thread_Racing_Game.Classes
     {
         private String condition;
         private String locationName;
+        private String[] cities = {"Emmen", "Kyiv", "Krakow", "Berlin", "Minsk", "Varnek", "Bodo", "Amsterdam", "Oslo"};
 
         public Weather()
         {
@@ -28,6 +29,13 @@ namespace Thread_Racing_Game.Classes
         {
             get => locationName;
             set => locationName = value;
+        }
+
+        public void getRandomWeather()
+        {
+            Random rnd = new Random();
+            int index = rnd.Next(cities.Length);
+            getWeather(cities[index]);
         }
 
         private void getWeather(String location)

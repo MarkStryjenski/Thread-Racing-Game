@@ -25,11 +25,14 @@ namespace Thread_Racing_Game.Views
         public static float DesignHeght = 720;
         public static float scaleWidth, scaleHeight;
         public GameState gameState;
+        Weather weather;
 
         public MainPage()
         {
             InitializeComponent();
             User user = new User(100);
+
+            weather = new Weather();
 
             RepairTeam repairTeam = new RepairTeam(10);
             Car car = new Car(100);
@@ -102,5 +105,11 @@ namespace Thread_Racing_Game.Views
         }
 
         private void OnPropertyChanged(string propertyName) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+
+        public void weaterButtonClick(object sender, RoutedEventArgs e)
+        {
+            weather.getRandomWeather();
+            weaterButton.Content = weather.Condition;
+        }
     }
 }

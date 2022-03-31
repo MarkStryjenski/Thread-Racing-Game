@@ -13,6 +13,7 @@
 
         <canvas:CanvasControl x:Name="raceCanvas" CreateResources="GameCanvas_CreateResources" Draw="GameCanvas_Draw" IsTapEnabled="True" Opacity="0.5"/>
         <Custom:NumberBox HorizontalAlignment="Center" Margin="0,545,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="weaterButton" Content="Get random weater" Click="weaterButtonClick" Margin="0,718,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
 
 
 
