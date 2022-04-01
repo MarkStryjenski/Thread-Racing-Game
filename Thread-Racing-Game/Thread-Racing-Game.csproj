@@ -137,7 +137,6 @@
     <Compile Include="Classes\Bet.cs" />
     <Compile Include="Classes\Car.cs" />
     <Compile Include="Classes\Casino.cs" />
-    <Compile Include="Classes\Class1.cs" />
     <Compile Include="Classes\GameController.cs" />
     <Compile Include="Classes\GameState.cs" />
     <Compile Include="Classes\InitialGameHelper.cs" />
