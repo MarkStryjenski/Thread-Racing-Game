@@ -20,7 +20,7 @@ namespace Thread_Racing_Game.Classes
         {
             if(repairSkill>10 || repairSkill < 1)
             {
-                this.repairSkill = 5;
+                this.repairSkill = 10;
             }
             else
             {
@@ -34,7 +34,7 @@ namespace Thread_Racing_Game.Classes
         //}
         public int Repair()
         {
-            return this.repairSkill;
+            return this.repairSkill * 1000;
         }
 
         //public void RepairWheel()

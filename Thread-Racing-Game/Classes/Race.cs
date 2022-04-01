@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -8,6 +9,7 @@ using Thread_Racing_Game.Enums;
 
 namespace Thread_Racing_Game.Classes
 {
+    
     public class Race
     {
         public double Distance { get; set; }
@@ -22,18 +24,18 @@ namespace Thread_Racing_Game.Classes
         public Thread[] listOfThreads { get; set; }
         public Team team { get; set; }
         public Weather weather { get; set; }
+        private Object locker = new object();
 
-        public Race(double distance,List<Team> attendingTeams,Weather weather)
+        public Race(double distance,List<Team> attendingTeams)
         {
             this.Distance = distance;
             this.AttendingTeams = attendingTeams;
             this.checker = new SemaphoreSlim(this.AttendingTeams.Count());
             this.listOfThreads = new Thread[this.AttendingTeams.Count()];
-            this.weather = weather;
-            //RepairTeam repairTeam = new RepairTeam(10);
-            //Car car = new Car(100);
-            //this.team = new Team("Alfa", repairTeam, car, null);
+            this.weather = new Weather();
         }
+
+        
 
         public void startRace()
         {
@@ -45,40 +47,52 @@ namespace Thread_Racing_Game.Classes
 
         }
 
-        public void pitStopSemaphore(Team team)
+        public void pitStopSemaphore(Car car)
         {
-            //team.Car.ProcessCompleted += car_ProcessCompleted;
-            //team.Car.generateCurrentSpeed();
-
-            for (int i = 0; i < this.listOfThreads.GetLength(0); i++)
+            if (!car.RequiresPitStop)
             {
-                int local = i;
-                this.listOfThreads[i] = new Thread(() => checkPitStopAvailability(team));
+                Thread thread = new Thread(() => checkPitStopAvailability(car));
 
-                this.listOfThreads[i].Start();
-                //Thread.Sleep(team.RepairTeam.Repair());
-                Thread.Sleep(1000);
-            }
-
-            for (int j = 0; j < listOfThreads.GetLength(0); j++)
-            {
-                this.listOfThreads[j].Join();
+                thread.Start();
+                thread.Join();
             }
         }
 
-        public void checkPitStopAvailability(Team team)
+        public void checkPitStopAvailability(Car car)
         {
-            Console.WriteLine("The team {0} requests to enter the pitstop", team.Name);
+            car.RequiresPitStop = true;
+            Debug.WriteLine($"The team {0} requests to enter the pitstop ", car.Name);
             this.checker.Wait();
-            Console.WriteLine("Team: {0} has entered the pitstop", team.Name);
-            Thread.Sleep(team.RepairTeam.Repair());
-            Console.WriteLine("Team: {0} has repaired the car and is leaving a pitstop",team.Name);
+
+            Debug.WriteLine($"Team: {0} has entered the pitstop", car.Name);
+            //Thread.Sleep(team.RepairTeam.Repair());
+            RepairTeam repairTeam = assembleRepairTeam(car);
+            Thread.Sleep(repairTeam.Repair());
+            lock (this.locker)
+            {
+                car.EngineHealth = 100;
+                car.WheelHealth = 100;
+            }
+            
+            //Thread.Sleep(10000);
+            //car.EngineHealth = 100;
+            //car.WheelHealth = 100;
+            Debug.WriteLine($"Team: {0} has repaired the car and is leaving a pitstop", car.Name);
+            car.RequiresPitStop = false;
+
             this.checker.Release();
         }
 
-        public static void car_ProcessCompleted(object sender,EventArgs e)
+        private RepairTeam assembleRepairTeam(Car car)
         {
-            Console.WriteLine("Process completed");
+            for (int i = 0; i < AttendingTeams.Count; i++)
+            {
+                if (AttendingTeams[i].Car == car)
+                {
+                    return AttendingTeams[i].RepairTeam;
+                }
+            }
+            return new RepairTeam(5);
         }
 
         private async void checkBuffsForEachTeam()
@@ -88,6 +102,5 @@ namespace Thread_Racing_Game.Classes
                 await this.AttendingTeams[i].findBuffMultiplier(this.weather);
             }
         }
-
     }
 }

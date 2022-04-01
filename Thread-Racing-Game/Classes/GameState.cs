@@ -16,11 +16,11 @@ namespace Thread_Racing_Game.Classes
 
         public Team team { get; set; }
 
-        public GameState(Race race, Casino casino, User user)
+        public GameState(Race race, Casino casino)
         {
             this.race = race;
             this.casino = casino;
-            this.user = user;
+            this.user = new User(100);
             //this.team = team;
         }
 

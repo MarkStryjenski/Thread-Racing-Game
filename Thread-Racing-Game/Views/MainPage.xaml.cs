@@ -13,6 +13,7 @@ using Windows.UI.Core;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 using Point = System.Drawing.Point;
 
 namespace Thread_Racing_Game.Views
@@ -23,6 +24,7 @@ namespace Thread_Racing_Game.Views
         CanvasBitmap car;
         CanvasBitmap finishLine;
         //int timecounter = 10;
+        int timecounter = 1;
         DispatcherTimer timer = new DispatcherTimer();
         public static Rect bounds = ApplicationView.GetForCurrentView().VisibleBounds;
         public static float DesignWidth = 1800;
@@ -37,23 +39,13 @@ namespace Thread_Racing_Game.Views
         public static List<float> percent = new List<float>();
 
         public GameState gameState;
+        public static float scaleWidth, scaleHeight;
+        public GameController gameController;
 
         public MainPage()
         {
             InitializeComponent();
-            User user = new User(100);
-
-            RepairTeam repairTeam = new RepairTeam(10);
-            Car car = new Car(100);
-            Team alfaTeam = new Team("Alfa", repairTeam, car,null);
-            List<Team> teamsList = new List<Team>();
-            teamsList.Add(alfaTeam);
-            Weather weather = new Weather();
-            Race race = new Race(150,teamsList,weather);
-
-            this.gameState = new GameState(race, null, user);
-
-            this.gameState.race.pitStopSemaphore(alfaTeam);
+            gameController = new GameController(4);
 
             Window.Current.SizeChanged += Current_SizeChanged;
             Scaling.setScale();
@@ -87,6 +79,11 @@ namespace Thread_Racing_Game.Views
         private void Timer_Tick(object sender, object e)
         {
             test.Text = DateTime.Now.ToString("h:mm:ss tt");
+            if (timecounter % 2 == 0)
+            {
+                gameController.ExecuteGameCycle();
+            }
+            timecounter++;
         }
 
         private void GameCanvas_CreateResources(Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl sender, Microsoft.Graphics.Canvas.UI.CanvasCreateResourcesEventArgs args)
@@ -146,5 +143,20 @@ namespace Thread_Racing_Game.Views
         }
 
         private void OnPropertyChanged(string propertyName) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+
+        public void weaterButtonClick(object sender, RoutedEventArgs e)
+        {
+            gameController.gameState.race.weather.getRandomWeather();
+            applyWeather();
+        }
+
+        private void applyWeather()
+        {
+            weatherLocation.Text = "Location: " + gameController.gameState.race.weather.LocationName;
+            weatherInfo.Text = "Weather condition: " + gameController.gameState.race.weather.Condition;
+            Uri imageUri = new Uri(gameController.gameState.race.weather.Icon);
+            BitmapImage icon = new BitmapImage(imageUri);
+            weatherIcon.Source = icon;
+        }
     }
 }
