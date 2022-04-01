@@ -471,6 +471,8 @@
     <Content Include="Assets\Flags\za.png" />
     <Content Include="Assets\Flags\zm.png" />
     <Content Include="Assets\Flags\zw.png" />
+    <Content Include="Assets\Images\car.png" />
+    <Content Include="Assets\Images\finish-line.png" />
     <Content Include="Assets\Images\race-track-with-start-finish-line.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />

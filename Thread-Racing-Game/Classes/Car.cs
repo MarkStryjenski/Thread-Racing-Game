@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using Thread_Racing_Game.Core.Models;
@@ -9,6 +10,8 @@ namespace Thread_Racing_Game.Classes
 {
     public class Car
     {
+        public Vector2 Position { get; set; }
+
         private double wheelHealth;
         public double WheelHealth
         {
