@@ -9,6 +9,7 @@ using Thread_Racing_Game.Enums;
 
 namespace Thread_Racing_Game.Classes
 {
+    public delegate void MyHandler1(object sender, Car e);
     public class Race
     {
         public double Distance { get; set; }
@@ -31,6 +32,16 @@ namespace Thread_Racing_Game.Classes
             this.checker = new SemaphoreSlim(this.AttendingTeams.Count());
             this.listOfThreads = new Thread[this.AttendingTeams.Count()];
             this.weather = new Weather();
+            setUpPitStop();
+        }
+
+        public void setUpPitStop()
+        {
+            for (int i = 0; i < AttendingTeams.Count; i++)
+            {
+                MyHandler1 d1 = new MyHandler1(pitStopHandler);
+                AttendingTeams[i].Car.Event1 += d1;
+            }
         }
 
         public void startRace()

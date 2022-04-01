@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 namespace Thread_Racing_Game.Classes
 {
-    public delegate void MyHandler1 (object sender, Car e);
     public class GameController
     {
         public Thread[] gameThreads;
@@ -20,35 +19,7 @@ namespace Thread_Racing_Game.Classes
         {
             this.gameThreads = new Thread[numThreads];
             InitialGameHelper.Initiate();
-            RepairTeam repairTeam = new RepairTeam(10);
-            Car car1 = new Car(100);
-            car1.Name = "ALFA";
-            car1.WheelHealth = 90;
-            car1.EngineHealth = 90;
-
-            Car car2 = new Car(100);
-            car2.Name = "BETA";
-            car2.WheelHealth = 30;
-            car2.EngineHealth = 30;
-
-            Car car3 = new Car(100);
-            car3.Name = "OMEGA";
-            car3.WheelHealth = 40;
-            car3.EngineHealth = 50;
-
-            Team alfaTeam = new Team("Alfa", repairTeam, car1, null);
-            Team betaTeam = new Team("Beta", repairTeam, car2, null);
-            Team gammaTeam = new Team("Gamma", repairTeam, car1, null);
-            Team omegaTeam = new Team("Omega", repairTeam, car3, null);
-            List<Team> teamsList = new List<Team>();
-            teamsList.Add(alfaTeam);
-            teamsList.Add(betaTeam);
-            teamsList.Add(gammaTeam);
-            teamsList.Add(omegaTeam);
-            Weather weather = new Weather();
-            Race race = new Race(150, teamsList);
-            this.gameState = new GameState(race, null);
-            //this.gameState = new GameState(new Race(1000, InitialGameHelper.InitialTeamsList), null);
+            this.gameState = new GameState(new Race(1000, InitialGameHelper.InitialTeamsList), null);
         }
 
         public void ExecuteGameCycle()
@@ -95,10 +66,6 @@ namespace Thread_Racing_Game.Classes
                         teamIndex++;
                         Team tmpTeam = gameState.race.AttendingTeams[teamIndex];
                         // get speed per team
-
-                        Car teamsCar = tmpTeam.Car;
-                        MyHandler1 d1 = new MyHandler1(pitStopHandler);
-                        teamsCar.Event1 += d1;
                         double Speed = tmpTeam.Car.generateCurrentSpeed();
 
                         // update dictionary in gameState
