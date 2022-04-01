@@ -39,7 +39,6 @@ namespace Thread_Racing_Game.Views
         public static List<float> percent = new List<float>();
 
         public GameState gameState;
-        public static float scaleWidth, scaleHeight;
         public GameController gameController;
 
         public MainPage()
