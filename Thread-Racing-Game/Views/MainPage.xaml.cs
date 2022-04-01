@@ -32,11 +32,25 @@ namespace Thread_Racing_Game.Views
             User user = new User(100);
 
             RepairTeam repairTeam = new RepairTeam(10);
-            Car car = new Car(100);
-            Team alfaTeam = new Team("Alfa", repairTeam, car,null);
-            Team betaTeam = new Team("Beta", repairTeam, car, null);
-            Team gammaTeam = new Team("Gamma", repairTeam, car, null);
-            Team omegaTeam = new Team("Omega", repairTeam, car, null);
+            Car car1 = new Car(100);
+            car1.Name = "ALFA";
+            car1.WheelHealth = 90;
+            car1.EngineHealth = 90;
+
+            Car car2 = new Car(100);
+            car2.Name = "BETA";
+            car2.WheelHealth = 30;
+            car2.EngineHealth = 30;
+
+            Car car3 = new Car(100);
+            car3.Name = "OMEGA";
+            car3.WheelHealth = 40;
+            car3.EngineHealth = 50;
+
+            Team alfaTeam = new Team("Alfa", repairTeam, car1,null);
+            Team betaTeam = new Team("Beta", repairTeam, car2, null);
+            Team gammaTeam = new Team("Gamma", repairTeam, car1, null);
+            Team omegaTeam = new Team("Omega", repairTeam, car3, null);
             List<Team> teamsList = new List<Team>();
             teamsList.Add(alfaTeam);
             teamsList.Add(betaTeam);
@@ -44,10 +58,12 @@ namespace Thread_Racing_Game.Views
             teamsList.Add(omegaTeam);
             Weather weather = new Weather();
             Race race = new Race(150,teamsList);
+            //race.testEventHandler();
 
             this.gameState = new GameState(race, null);
 
-            this.gameState.race.pitStopSemaphore(alfaTeam);
+            GameController gameController = new GameController(4);
+            gameController.ExecuteGameCycle();
 
             Window.Current.SizeChanged += Current_SizeChanged;
             Scaling.setScale();

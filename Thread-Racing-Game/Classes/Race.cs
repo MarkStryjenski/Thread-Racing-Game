@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -30,11 +31,6 @@ namespace Thread_Racing_Game.Classes
             this.checker = new SemaphoreSlim(this.AttendingTeams.Count());
             this.listOfThreads = new Thread[this.AttendingTeams.Count()];
             this.weather = new Weather();
-            //team.Car.ProcessCompleted += car_ProcessCompleted;
-            //team.Car.generateCurrentSpeed();
-            //RepairTeam repairTeam = new RepairTeam(10);
-            //Car car = new Car(100);
-            //this.team = new Team("Alfa", repairTeam, car, null);
         }
 
         public void startRace()
@@ -47,15 +43,13 @@ namespace Thread_Racing_Game.Classes
 
         }
 
-        public void pitStopSemaphore(Team team)
+        public void pitStopSemaphore(Car car)
         {
-            //team.Car.ProcessCompleted += car_ProcessCompleted;
-            //team.Car.generateCurrentSpeed();
 
             for (int i = 0; i < this.listOfThreads.GetLength(0); i++)
             {
                 int local = i;
-                this.listOfThreads[i] = new Thread(() => checkPitStopAvailability(team));
+                this.listOfThreads[i] = new Thread(() => checkPitStopAvailability(car));
 
                 this.listOfThreads[i].Start();
                 //Thread.Sleep(team.RepairTeam.Repair());
@@ -68,19 +62,15 @@ namespace Thread_Racing_Game.Classes
             }
         }
 
-        public void checkPitStopAvailability(Team team)
+        public void checkPitStopAvailability(Car car)
         {
-            Console.WriteLine("The team {0} requests to enter the pitstop", team.Name);
+            Debug.WriteLine($"The team {0} requests to enter the pitstop ", car.Name);
             this.checker.Wait();
-            Console.WriteLine("Team: {0} has entered the pitstop", team.Name);
-            Thread.Sleep(team.RepairTeam.Repair());
-            Console.WriteLine("Team: {0} has repaired the car and is leaving a pitstop",team.Name);
+            Debug.WriteLine($"Team: {0} has entered the pitstop", car.Name);
+            //Thread.Sleep(team.RepairTeam.Repair());
+            Thread.Sleep(1000);
+            Debug.WriteLine($"Team: {0} has repaired the car and is leaving a pitstop", car.Name);
             this.checker.Release();
-        }
-
-        public static void car_ProcessCompleted(object sender,EventArgs e)
-        {
-            Console.WriteLine("Process completed");
         }
 
         private async void checkBuffsForEachTeam()
@@ -91,5 +81,24 @@ namespace Thread_Racing_Game.Classes
             }
         }
 
+        public void testEventHandler()
+        {
+            for(int i = 0; i < AttendingTeams.Count(); i++)
+            {
+                Team tmpTeam = AttendingTeams[i];
+                Car teamsCar = tmpTeam.Car;
+                MyHandler1 d1 = new MyHandler1(pitStopHandler);
+                teamsCar.Event1 += d1;
+                // get speed per team
+                double Speed = tmpTeam.Car.generateCurrentSpeed();
+
+                teamsCar.Event1 += d1;
+            }
+        }
+        public void pitStopHandler(object sender, Car car)
+        {
+            Debug.WriteLine("Car {0} in pitstop", car.ToString());
+            pitStopSemaphore(car);
+        }
     }
 }

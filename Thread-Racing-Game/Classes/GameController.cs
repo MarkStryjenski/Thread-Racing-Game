@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace Thread_Racing_Game.Classes
 {
-    class GameController
+    public delegate void MyHandler1 (object sender, Car e);
+    public class GameController
     {
         public Thread[] gameThreads;
         public GameState gameState;
@@ -19,7 +20,35 @@ namespace Thread_Racing_Game.Classes
         {
             this.gameThreads = new Thread[numThreads];
             InitialGameHelper.Initiate();
-            this.gameState = new GameState(new Race(1000, InitialGameHelper.InitialTeamsList), null);
+            RepairTeam repairTeam = new RepairTeam(10);
+            Car car1 = new Car(100);
+            car1.Name = "ALFA";
+            car1.WheelHealth = 90;
+            car1.EngineHealth = 90;
+
+            Car car2 = new Car(100);
+            car2.Name = "BETA";
+            car2.WheelHealth = 30;
+            car2.EngineHealth = 30;
+
+            Car car3 = new Car(100);
+            car3.Name = "OMEGA";
+            car3.WheelHealth = 40;
+            car3.EngineHealth = 50;
+
+            Team alfaTeam = new Team("Alfa", repairTeam, car1, null);
+            Team betaTeam = new Team("Beta", repairTeam, car2, null);
+            Team gammaTeam = new Team("Gamma", repairTeam, car1, null);
+            Team omegaTeam = new Team("Omega", repairTeam, car3, null);
+            List<Team> teamsList = new List<Team>();
+            teamsList.Add(alfaTeam);
+            teamsList.Add(betaTeam);
+            teamsList.Add(gammaTeam);
+            teamsList.Add(omegaTeam);
+            Weather weather = new Weather();
+            Race race = new Race(150, teamsList);
+            this.gameState = new GameState(race, null);
+            //this.gameState = new GameState(new Race(1000, InitialGameHelper.InitialTeamsList), null);
         }
 
         public void ExecuteGameCycle()
@@ -66,22 +95,32 @@ namespace Thread_Racing_Game.Classes
                         teamIndex++;
                         Team tmpTeam = gameState.race.AttendingTeams[teamIndex];
                         // get speed per team
+
+                        Car teamsCar = tmpTeam.Car;
+                        MyHandler1 d1 = new MyHandler1(pitStopHandler);
+                        teamsCar.Event1 += d1;
                         double Speed = tmpTeam.Car.generateCurrentSpeed();
 
                         // update dictionary in gameState
-                        gameState.race.RaceProgress[tmpTeam] = gameState.race.RaceProgress[tmpTeam] + Speed;
+                        //gameState.race.RaceProgress[tmpTeam] = gameState.race.RaceProgress[tmpTeam] + Speed;
                         Debug.WriteLine("I am speed Loop nr: {0} => {1}", tmpTeam.Name, Speed);
 
+
                         // check if crossed finishline event if yes assign winner.
-                        if (gameState.race.RaceProgress[tmpTeam] >= gameState.race.Distance)
-                        {
-                            // add too winner list!
-                        }
+                        //if (gameState.race.RaceProgress[tmpTeam] >= gameState.race.Distance)
+                        //{
+                        //    // add too winner list!
+                        //}
                     }
                 });
                 threadListIndex++;
             }
             
+        }
+        public void pitStopHandler(object sender, Car car)
+        {
+            Debug.WriteLine($"Car {0} in pitstop", car.Name);
+            gameState.race.pitStopSemaphore(car);
         }
 
         public void ExecuteGameThreads()
@@ -102,5 +141,7 @@ namespace Thread_Racing_Game.Classes
         //{
         //    return team.GetTeamCar();
         //}
+
+        //change requirePitStop to false by default and change it to true if the car breaks
     }
 }

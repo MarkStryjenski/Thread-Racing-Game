@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,6 +38,9 @@ namespace Thread_Racing_Game.Classes
         public double multiplier { get; set; }
 
         public event EventHandler ProcessCompleted;
+        public event MyHandler1 Event1;
+
+        public string Name { get; set; }
 
         ///<summary>
         ///Top speed needs to be even number
@@ -55,6 +59,7 @@ namespace Thread_Racing_Game.Classes
             this.EngineHealth = 100;
             this.RequiresPitStop = false;
             this.multiplier = 0;
+            this.Name = "";
         }
 
         public virtual void OnProcessCompleted(EventArgs e)
@@ -67,8 +72,8 @@ namespace Thread_Racing_Game.Classes
             double speed = 0;
             if (isCarBroken())
             {
-                Console.WriteLine("Process Started!");
-                OnProcessCompleted(EventArgs.Empty);
+                Debug.WriteLine("Process Started!");
+                Event1(this, this);
             }
             if (this.multiplier != 0)
             {
@@ -103,7 +108,11 @@ namespace Thread_Racing_Game.Classes
 
         public bool isCarBroken()
         {
-            return WheelHealth < 55 || EngineHealth < 55;
+            if(WheelHealth < 55 || EngineHealth < 55)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
