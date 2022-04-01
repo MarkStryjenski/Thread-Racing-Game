@@ -1,18 +1,60 @@
 ﻿<Page
+    x:Class="Thread_Racing_Game.Views.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Custom="using:Microsoft.UI.Xaml.Controls"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
-    xmlns:Custom="using:Microsoft.UI.Xaml.Controls"
-    x:Class="Thread_Racing_Game.Views.MainPage"
     mc:Ignorable="d">
     <Grid Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
-        <TextBlock x:Name="Time" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock x:Name="test" HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="Hello"/></TextBlock>
+        <TextBlock
+            x:Name="Time"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" />
+        <TextBlock
+            x:Name="test"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"><Run Text="Hello" /></TextBlock>
 
-        <canvas:CanvasControl x:Name="raceCanvas" CreateResources="GameCanvas_CreateResources" Draw="GameCanvas_Draw" IsTapEnabled="True" Opacity="0.5"/>
-        <Custom:NumberBox HorizontalAlignment="Center" Margin="0,545,0,0" VerticalAlignment="Top"/>
+        <canvas:CanvasControl
+            x:Name="raceCanvas"
+            CreateResources="GameCanvas_CreateResources"
+            Draw="GameCanvas_Draw"
+            IsTapEnabled="True"
+            Opacity="0.5" />
+        <Custom:NumberBox
+            Margin="0,545,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top" />
+        <Button
+            x:Name="weaterButton"
+            Margin="0,718,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Click="weaterButtonClick"
+            Content="Get random weater" />
+        <TextBlock
+            x:Name="weatherInfo"
+            Width="250"
+            Height="25"
+            Margin="1239,53,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="18"
+            Text="Weather condition: "
+            TextWrapping="Wrap" />
+        <TextBlock
+            x:Name="weatherLocation"
+            Width="251"
+            Height="27"
+            Margin="1239,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="18"
+            Text="Location: "
+            TextWrapping="Wrap" TextAlignment="Left" UseLayoutRounding="True" FlowDirection="LeftToRight" />
+        <Image x:Name="weatherIcon" HorizontalAlignment="Left" Height="62" Margin="1156,10,0,0" VerticalAlignment="Top" Width="62" Stretch="Fill"/>
 
 
 
