@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,6 +7,8 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using Thread_Racing_Game.Core.Models;
+using Thread_Racing_Game.Helpers;
 
 namespace Thread_Racing_Game.Classes
 {
@@ -13,10 +16,13 @@ namespace Thread_Racing_Game.Classes
     {
         private String condition;
         private String locationName;
-        private String[] cities = {"Emmen", "Kyiv", "Krakow", "Berlin", "Minsk", "Varnek", "Bodo", "Amsterdam", "Oslo"};
+        private String icon;
+        private List<Country> countries;
 
         public Weather()
         {
+            getCountriesList();
+
             getWeather("Emmen");
         }
 
@@ -30,12 +36,22 @@ namespace Thread_Racing_Game.Classes
             get => locationName;
             set => locationName = value;
         }
+        public string Icon
+        {
+            get => icon;
+            set => icon = value;
+        }
+
+        private async void getCountriesList()
+        {
+            countries = await Utility.GetCountries();
+        }
 
         public void getRandomWeather()
         {
             Random rnd = new Random();
-            int index = rnd.Next(cities.Length);
-            getWeather(cities[index]);
+            int index = rnd.Next(countries.Count);
+            getWeather((String)countries[index].Name);
         }
 
         private void getWeather(String location)
@@ -44,26 +60,36 @@ namespace Thread_Racing_Game.Classes
 
             url_api = "http://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=metric&appid=0f8fb90d8b26b2347d7b2c845966884d";
 
-            HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(url_api);
 
-            HttpWebResponse httpWebResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-
-            string response;
-
-            if (httpWebResponse.StatusCode == HttpStatusCode.OK)
+            try
             {
 
-                using (StreamReader streamReader = new StreamReader(httpWebResponse.GetResponseStream()))
+                HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(url_api);
+
+                HttpWebResponse httpWebResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+
+                string response;
+
+                if (httpWebResponse.StatusCode == HttpStatusCode.OK)
                 {
-                    response = streamReader.ReadToEnd();
+
+                    using (StreamReader streamReader = new StreamReader(httpWebResponse.GetResponseStream()))
+                    {
+                        response = streamReader.ReadToEnd();
+                    }
+
+                    Root weatherResponse = JsonConvert.DeserializeObject<Root>(response);
+
+                    Condition = weatherResponse.Weather[0].Description[0].ToString().ToUpper() + weatherResponse.Weather[0].Description.Substring(1);
+                    Icon = "http://openweathermap.org/img/wn/" + weatherResponse.Weather[0].Icon + "@2x.png";
+                    LocationName = location;
+
+                    httpWebResponse.Close();
                 }
-
-                Root weatherResponse = JsonConvert.DeserializeObject<Root>(response);
-
-                Condition = weatherResponse.Weather[0].Description;
-                LocationName = location;
-
-                httpWebResponse.Close();
+            }
+            catch (WebException)
+            {
+                getRandomWeather();
             }
         }
     }

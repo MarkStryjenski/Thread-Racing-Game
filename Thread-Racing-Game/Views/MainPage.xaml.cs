@@ -12,6 +12,7 @@ using Windows.UI.Core;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace Thread_Racing_Game.Views
 {
@@ -25,14 +26,12 @@ namespace Thread_Racing_Game.Views
         public static float DesignHeght = 720;
         public static float scaleWidth, scaleHeight;
         public GameState gameState;
-        Weather weather;
+        public Weather weather = new Weather();
 
         public MainPage()
         {
             InitializeComponent();
             User user = new User(100);
-
-            weather = new Weather();
 
             RepairTeam repairTeam = new RepairTeam(10);
             Car car = new Car(100);
@@ -54,6 +53,7 @@ namespace Thread_Racing_Game.Views
             //Timer.Start();
             timer.Tick += Timer_Tick;
             timer.Start();
+            applyWeather();
         }
 
         private void Current_SizeChanged(object sender, WindowSizeChangedEventArgs e)
@@ -110,7 +110,16 @@ namespace Thread_Racing_Game.Views
         public void weaterButtonClick(object sender, RoutedEventArgs e)
         {
             weather.getRandomWeather();
-            weaterButton.Content = weather.Condition;
+            applyWeather();
+        }
+
+        private void applyWeather()
+        {
+            weatherLocation.Text = "Location: " + weather.LocationName;
+            weatherInfo.Text = "Weather condition: " + weather.Condition;
+            Uri imageUri = new Uri(weather.Icon);
+            BitmapImage icon = new BitmapImage(imageUri);
+            weatherIcon.Source = icon;
         }
     }
 }
