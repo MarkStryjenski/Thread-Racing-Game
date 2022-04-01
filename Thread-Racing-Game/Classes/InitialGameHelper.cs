@@ -31,16 +31,16 @@ namespace Thread_Racing_Game.Classes
             InitialCar1.EngineHealth = 90;
             InitialCar1.Name = "Alfa";
 
-            InitialCar2.WheelHealth = 30;
-            InitialCar2.EngineHealth = 30;
+            InitialCar2.WheelHealth = 100;
+            InitialCar2.EngineHealth = 100;
             InitialCar2.Name = "Beta";
 
-            InitialCar3.WheelHealth = 40;
-            InitialCar3.EngineHealth = 50;
+            InitialCar3.WheelHealth = 90;
+            InitialCar3.EngineHealth = 90;
             InitialCar3.Name = "Gamma";
 
-            InitialCar4.WheelHealth = 40;
-            InitialCar4.EngineHealth = 50;
+            InitialCar4.WheelHealth = 80;
+            InitialCar4.EngineHealth = 80;
             InitialCar4.Name = "Omega";
         }
     }

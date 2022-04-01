@@ -9,7 +9,7 @@ using Thread_Racing_Game.Enums;
 
 namespace Thread_Racing_Game.Classes
 {
-    public delegate void MyHandler1(object sender, Car e);
+    
     public class Race
     {
         public double Distance { get; set; }
@@ -24,6 +24,7 @@ namespace Thread_Racing_Game.Classes
         public Thread[] listOfThreads { get; set; }
         public Team team { get; set; }
         public Weather weather { get; set; }
+        private Object locker = new object();
 
         public Race(double distance,List<Team> attendingTeams)
         {
@@ -32,17 +33,9 @@ namespace Thread_Racing_Game.Classes
             this.checker = new SemaphoreSlim(this.AttendingTeams.Count());
             this.listOfThreads = new Thread[this.AttendingTeams.Count()];
             this.weather = new Weather();
-            setUpPitStop();
         }
 
-        public void setUpPitStop()
-        {
-            for (int i = 0; i < AttendingTeams.Count; i++)
-            {
-                MyHandler1 d1 = new MyHandler1(pitStopHandler);
-                AttendingTeams[i].Car.Event1 += d1;
-            }
-        }
+        
 
         public void startRace()
         {
@@ -56,32 +49,50 @@ namespace Thread_Racing_Game.Classes
 
         public void pitStopSemaphore(Car car)
         {
-
-            for (int i = 0; i < this.listOfThreads.GetLength(0); i++)
+            if (!car.RequiresPitStop)
             {
-                int local = i;
-                this.listOfThreads[i] = new Thread(() => checkPitStopAvailability(car));
+                Thread thread = new Thread(() => checkPitStopAvailability(car));
 
-                this.listOfThreads[i].Start();
-                //Thread.Sleep(team.RepairTeam.Repair());
-                Thread.Sleep(1000);
-            }
-
-            for (int j = 0; j < listOfThreads.GetLength(0); j++)
-            {
-                this.listOfThreads[j].Join();
+                thread.Start();
+                thread.Join();
             }
         }
 
         public void checkPitStopAvailability(Car car)
         {
+            car.RequiresPitStop = true;
             Debug.WriteLine($"The team {0} requests to enter the pitstop ", car.Name);
             this.checker.Wait();
+
             Debug.WriteLine($"Team: {0} has entered the pitstop", car.Name);
             //Thread.Sleep(team.RepairTeam.Repair());
-            Thread.Sleep(1000);
+            RepairTeam repairTeam = assembleRepairTeam(car);
+            Thread.Sleep(repairTeam.Repair());
+            lock (this.locker)
+            {
+                car.EngineHealth = 100;
+                car.WheelHealth = 100;
+            }
+            
+            //Thread.Sleep(10000);
+            //car.EngineHealth = 100;
+            //car.WheelHealth = 100;
             Debug.WriteLine($"Team: {0} has repaired the car and is leaving a pitstop", car.Name);
+            car.RequiresPitStop = false;
+
             this.checker.Release();
+        }
+
+        private RepairTeam assembleRepairTeam(Car car)
+        {
+            for (int i = 0; i < AttendingTeams.Count; i++)
+            {
+                if (AttendingTeams[i].Car == car)
+                {
+                    return AttendingTeams[i].RepairTeam;
+                }
+            }
+            return new RepairTeam(5);
         }
 
         private async void checkBuffsForEachTeam()
@@ -90,26 +101,6 @@ namespace Thread_Racing_Game.Classes
             {
                 await this.AttendingTeams[i].findBuffMultiplier(this.weather);
             }
-        }
-
-        public void testEventHandler()
-        {
-            for(int i = 0; i < AttendingTeams.Count(); i++)
-            {
-                Team tmpTeam = AttendingTeams[i];
-                Car teamsCar = tmpTeam.Car;
-                MyHandler1 d1 = new MyHandler1(pitStopHandler);
-                teamsCar.Event1 += d1;
-                // get speed per team
-                double Speed = tmpTeam.Car.generateCurrentSpeed();
-
-                teamsCar.Event1 += d1;
-            }
-        }
-        public void pitStopHandler(object sender, Car car)
-        {
-            Debug.WriteLine("Car {0} in pitstop", car.ToString());
-            pitStopSemaphore(car);
         }
     }
 }
