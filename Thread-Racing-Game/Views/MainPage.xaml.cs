@@ -3,6 +3,7 @@ using Microsoft.Graphics.Canvas.UI.Xaml;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Runtime.CompilerServices;
@@ -37,6 +38,7 @@ namespace Thread_Racing_Game.Views
         public static List<float> finishLineXPOS = new List<float>();
         public static List<float> finishLineYPOS = new List<float>();
         public static List<float> percent = new List<float>();
+        public static Boolean updatePositions = false;
 
         public GameState gameState;
         public GameController gameController;
@@ -81,6 +83,7 @@ namespace Thread_Racing_Game.Views
             if (timecounter % 2 == 0)
             {
                 gameController.ExecuteGameCycle();
+                updatePositions = true;
             }
             timecounter++;
         }
@@ -109,23 +112,28 @@ namespace Thread_Racing_Game.Views
             args.DrawingSession.DrawImage(Scaling.img(BG));
 
             for (int i = 0; i < carXPOS.Count; i++)
-            {
-                pointX = (carX + (carXPOS[i] - carX) * percent[i]);
+            {                double distanceTraveled;
 
-                args.DrawingSession.DrawImage(Scaling.img(car), pointX - (256 * scaleWidth), carYPOS[i] - (256 * scaleHeight));
+                Race race = gameController.gameState.race;
+                race.RaceProgress.TryGetValue(race.AttendingTeams[i], out distanceTraveled);
 
-                percent[i] += 0.050f;
-           
-                if(pointX >= DesignWidth * scaleWidth)
+                float percentRaceComplete = (float)(distanceTraveled / race.Distance) * 100;
+                //Debug.WriteLine("PERCENTAGE COMLETE::::::::: {0}", percentRaceComplete);
+                float newXPosition = (percentRaceComplete / 100) * (DesignWidth * scaleWidth);
+                Debug.WriteLine("New X POsition of car 0 index::::::::: {0}", newXPosition);
+                args.DrawingSession.DrawImage(Scaling.img(car), newXPosition - (256 * scaleWidth), carYPOS[i] - (256 * scaleHeight));
+
+                if (pointX >= DesignWidth * scaleWidth)
                 {
+                    //check if all cars are done, raise end game event and evaluate bets 
                     carXPOS.RemoveAt(i);
                     percent.RemoveAt(i);
                 }
             }
-
-
+                
             raceCanvas.Invalidate();
         }
+
 
         // navigation
         public event PropertyChangedEventHandler PropertyChanged;

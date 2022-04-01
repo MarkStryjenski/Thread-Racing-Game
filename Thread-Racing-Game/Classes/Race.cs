@@ -33,9 +33,17 @@ namespace Thread_Racing_Game.Classes
             this.checker = new SemaphoreSlim(this.AttendingTeams.Count());
             this.listOfThreads = new Thread[this.AttendingTeams.Count()];
             this.weather = new Weather();
+            this.RaceProgress = new Dictionary<Team, double> { };
+            setUpRaceProgress();
         }
 
-        
+        private void setUpRaceProgress()
+        {
+            for (int i = 0; i < AttendingTeams.Count; i++)
+            {
+                RaceProgress.Add(AttendingTeams[i], 0.0);
+            }
+        }
 
         public void startRace()
         {

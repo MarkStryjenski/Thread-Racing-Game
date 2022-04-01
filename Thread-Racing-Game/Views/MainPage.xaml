@@ -23,10 +23,7 @@
             Draw="GameCanvas_Draw"
             IsTapEnabled="True"
             Opacity="0.5" />
-        <Custom:NumberBox
-            Margin="0,545,0,0"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Top" />
+        
         <Button
             x:Name="weaterButton"
             Margin="0,718,0,0"
@@ -55,8 +52,5 @@
             Text="Location: "
             TextWrapping="Wrap" TextAlignment="Left" UseLayoutRounding="True" FlowDirection="LeftToRight" />
         <Image x:Name="weatherIcon" HorizontalAlignment="Left" Height="62" Margin="1156,10,0,0" VerticalAlignment="Top" Width="62" Stretch="Fill"/>
-
-
-
     </Grid>
 </Page>

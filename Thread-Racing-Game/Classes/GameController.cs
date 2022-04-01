@@ -78,7 +78,9 @@ namespace Thread_Racing_Game.Classes
                                 double Speed = tmpTeam.Car.generateCurrentSpeed();
                                 // update dictionary in gameState
                                 //gameState.race.RaceProgress[tmpTeam] = gameState.race.RaceProgress[tmpTeam] + Speed;
+                                gameState.race.RaceProgress[tmpTeam] = gameState.race.RaceProgress[tmpTeam] + Speed;
                                 Debug.WriteLine("I am speed Loop nr: {0} => {1}", tmpTeam.Name, Speed);
+                                Debug.WriteLine("total distance traveled: {0} => {1}", tmpTeam.Name, gameState.race.RaceProgress[tmpTeam]);
                            
                             }
                         }
@@ -92,9 +94,6 @@ namespace Thread_Racing_Game.Classes
                 });
                 threadListIndex++;
             }
-
-
-
         }
 
         public void ExecuteGameThreads()
